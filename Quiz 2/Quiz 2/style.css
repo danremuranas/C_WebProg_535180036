@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(bckgrnd.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  border-radius: 5%;
+  max-width: 500px;
+  height: 550px;
+  background: rgba(218, 218, 218, 0.8);
+  padding: 20px 45px 45px 45px;
+  text-align: center;
+  margin: 0 20px;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.box-photo {
+  max-width: 300px;
+  height: auto;
+  position: relative; 
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.box h1 {
+  font-size: 40px;
+  font-weight: 50%;
+  color: rgba(39, 39, 39);
+}
+
+.box h4 {
+  font-size: 18px;
+  font-weight: 25%;
+  color: rgba(39, 39, 39);
+}
+
+.box p {
+  text-align: left;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.box li {
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+
+.box li a {
+  color: rgba(39, 39, 39);
+  text-decoration: none;
+  font-size: 40px;
+  transition: all ease-in-out 250ms;
+}
+
+.box li a:hover {
+  color: #5c5c5c;
+}
