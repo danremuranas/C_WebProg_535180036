@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introduction Browser Log</title>
+
+    <style>
+        .MakeRed {
+            color: red;
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+        function WriteLog(LogText) {
+            document.getElementById("cLine1").innerHTML = "Hello World";
+            console.log(LogText);
+        }
+    </script>
+
+</head>
+
+<body>
+    <button type="button" onclick='WriteLog("Log this")'>Go</button>
+    <p id="cLine1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corporis, iste labore dolor ullam molestias!</p>
+
+</body>
+
+</html>

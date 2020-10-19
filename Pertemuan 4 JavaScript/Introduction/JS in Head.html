@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introduction JS in Head</title>
+
+    <style>
+        .MakeRed {
+            color: red;
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+        function changeLine1Style() {
+            document.getElementById("cLine1").className = "MakeRed";
+        }
+        function ChangeStyle(id, classname){
+            document.getElementById(id).className = classname;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <button type="button" onclick='changeLine1Style()'>Go</button>
+    <p id="cLine1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eveniet eum optio cumque dolorum ex sequi placeat delectus magni, nulla expedita nostrum voluptas vel obcaecati.</p>
+
+    <br />
+
+    <button type="button" onclick='ChangeStyle("cLine2","Hide")'>Hide This</button>
+    <button type="button" onclick='ChangeStyle("cLine2","Show")'>Show This</button>
+    <p id="cLine2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora perspiciatis, adipisci dolores quod voluptatem provident quam aperiam tenetur, necessitatibus, quae explicabo cumque ipsa magni suscipit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis dolorum temporibus corporis vitae architecto quae, illo doloremque explicabo velit amet incidunt magni accusamus doloribus in.</p>
+
+</body>
+
+</html>

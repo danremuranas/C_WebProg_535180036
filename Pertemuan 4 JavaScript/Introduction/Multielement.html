@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introduction Multielement</title>
+
+    <style>
+        .MakeRed {
+            color: red;
+        }
+
+        .Hide {
+            visibility: hidden;
+        }
+
+        .Show {
+            visibility: visible;
+        }
+    </style>
+
+    <script>
+        function ChangeAll(str){
+            document.getElementById("cLine1").innerHTML = str;
+            document.getElementById("cLine2").innerHTML = str;
+            document.getElementById("cLine1").className="MakeRed";
+            document.getElementById("cLine2").className="MakeRed";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <p id="cLine1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, totam et? Fugiat quia quam necessitatibus! Harum officia fugiat est magnam in labore mollitia adipisci id.</p>
+
+    <br>
+
+    <p id="cLine2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, veritatis et nostrum saepe officiis, minus dolore, cumque odio laudantium eum quos deserunt! Reiciendis, mollitia dolorem!</p>
+
+    <br>
+
+    <button type="button" onclick='ChangeAll("Helo Hai")'>Change All</button>
+
+</body>
+
+</html>
